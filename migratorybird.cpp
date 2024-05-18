@@ -39,7 +39,7 @@ int migratoryBirds(vector<int> arr) {
     int index=0;
     int max=count[0];
     for(int i=0;i<5;i++){
-        if(max<count[i]){
+        if(max<count[i]){ // < gives lowest id <= gives highest id
             max=count[i];
             index=i;
         }
